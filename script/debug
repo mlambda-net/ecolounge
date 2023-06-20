@@ -1,0 +1,6 @@
+#!/bin/zsh
+
+echo "Debugging"
+
+"${HOME}"/gems/bin/bundle install
+"${HOME}"/gems/bin/bundle exec "${HOME}"/gems/bin/jekyll serve --watch

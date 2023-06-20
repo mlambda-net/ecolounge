@@ -1,0 +1,37 @@
+{
+  "name": "ecolounge",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "build": "./node_modules/.bin/gulp concat-task",
+    "start": "./script/debug"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bulma": "^0.9.4",
+    "ease": "^0.1.0",
+    "gsap": "^3.12.1",
+    "requirejs": "^2.3.6",
+    "scrollmagic": "^2.0.8",
+    "scrollmagic-plugin-gsap": "^1.0.4",
+    "scrollmagic-plugins": "^1.0.8"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.22.5",
+    "@babel/plugin-transform-modules-commonjs": "^7.22.5",
+    "@babel/plugin-transform-runtime": "^7.22.5",
+    "@babel/preset-env": "^7.22.5",
+    "@babel/runtime": "^7.22.5",
+    "@babel/runtime-corejs2": "^7.22.5",
+    "babelify": "^10.0.0",
+    "commonjs": "^0.0.1",
+    "gulp": "^4.0.2",
+    "gulp-babel": "^8.0.0",
+    "gulp-browserify": "^0.5.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-include": "^2.4.1",
+    "gulp-modernizr": "^4.0.4",
+    "gulp-requirejs": "^1.4.0"
+  }
+}

@@ -1,0 +1,21 @@
+---
+layout: default
+bodyClass: "page-landing"
+---
+
+div(class="trigger")
+
+| {% for item in site.data.landing.items %}
+div(class="landing")
+    section(class="hero is-fullheight")
+        div(class="hero-head")
+        div(class="hero-body" style="background-image:url(\"{{item.img}}\");background-size:cover;")
+            div(class="container has-text-centered inner")
+                p(class="title") {{item.title}}
+                p(class="subtitle") {{item.subtitle}}
+        div(class="hero-footer")
+| {% endfor %}
+
+
+div(class="content")
+    | {{content}}

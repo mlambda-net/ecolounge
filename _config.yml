@@ -1,0 +1,43 @@
+lang: en
+title: Eco Lounge
+email: yordivad@gmail.com
+description: >- # this means to ignore newlines until "baseurl:"
+permalink: pretty
+baseurl: ""
+url: "https://ecolounge.com"
+
+
+livereload: true
+post_limit: 0
+quiet: true
+incremental: true
+
+
+sass:
+  style: compressed
+
+plugins:
+  - jekyll-environment-variables
+  - jekyll-mermaid
+  - jekyll-liquify
+  - jekyll-pug
+
+
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  - LICENSE.md
+  - LICENSE
+  - README.md
+  - skaffold.yaml
+  - makefile
+  - compose.yaml
+  - .gitignore
+  - script
+  - .idea
