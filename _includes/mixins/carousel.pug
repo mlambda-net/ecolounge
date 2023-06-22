@@ -1,0 +1,6 @@
+
+mixin carousel(data)
+    div(class="carousel")
+        |{% for item in !{ data } %}
+        div {{item.name}}
+        |{% endfor %}

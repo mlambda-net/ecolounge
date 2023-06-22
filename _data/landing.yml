@@ -8,7 +8,11 @@ items:
     img: /images/landing/4.png
   - title: Forest Two
     subtitle: by ecolounge
-    img: /images/landing/2.png
+    img: /images/landing/1.png
   - title: Forest Three
     subtitle: by ecolounge
-    img: /images/landing/3.png
+    img: /images/landing/2.png
+
+carousel:
+  - name: hello 1
+  - name: hello 2

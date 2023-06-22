@@ -4,8 +4,7 @@ email: yordivad@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
 permalink: pretty
 baseurl: ""
-url: "https://ecolounge.com"
-
+url: "https://mlambda-net.github.io"
 
 livereload: true
 post_limit: 0
@@ -25,6 +24,12 @@ plugins:
 
 
 exclude:
+  - package.json
+  - tsconfig.json
+  - webpack.config.js
+  - yarn.lock
+  - yarn-error.log
+  - assets
   - Gemfile
   - Gemfile.lock
   - node_modules

@@ -1,21 +1,41 @@
 ---
-layout: default
-bodyClass: "page-landing"
+bodyClass: page-landing
 ---
 
-div(class="trigger")
+extends default.pug
+include mixins/carousel.pug
 
-| {% for item in site.data.landing.items %}
-div(class="landing")
-    section(class="hero is-fullheight")
-        div(class="hero-head")
-        div(class="hero-body" style="background-image:url(\"{{item.img}}\");background-size:cover;")
-            div(class="container has-text-centered inner")
-                p(class="title") {{item.title}}
-                p(class="subtitle") {{item.subtitle}}
-        div(class="hero-footer")
-| {% endfor %}
+block scripts
+    script(type="module").
+        window.addEventListener("app.load", (e)=> {
+            let app = e.detail;
+            let page = app.CreateLanding();
+            page.load();
+            window.addEventListener("resize",() => page.reload() )
+        })
 
+block content
 
-div(class="content")
-    | {{content}}
+    include header.pug
+
+    div(class="trigger")
+    div(class="landing")
+        | {% for item in site.data.landing.items %}
+        div(class="landing-item")
+            div(class="hero-landing land" style="background-image:url('{{item.img | relative_url}}')")
+                section(class="hero is-fullheight")
+                    div(class="hero-head")
+                    div(class="hero-body" )
+                        div(class="container has-text-centered inner")
+                            p(class="title") {{item.title}}
+                            p(class="subtitle") {{item.subtitle}}
+        | {% endfor %}
+
+    div(class="detail")
+        div(class="inner")
+            div(class="container")
+                +carousel("site.data.landing.carousel")
+                | {{content}}
+
+    include footer.pug
+

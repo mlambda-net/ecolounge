@@ -1,0 +1,66 @@
+.page-landing {
+
+  .section {
+    padding: 0;
+    margin: 0;
+  }
+
+  .header {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 10;
+  }
+
+  .trigger  {
+    margin: auto;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    min-height: 1px;
+  }
+
+  .landing {
+    .land {
+      background-size: cover;
+    }
+
+    .inner {
+      .title {
+        color: white;
+        font-size: 15em;
+      }
+
+      .subtitle {
+        color: white;
+        font-size: 3em;
+      }
+    }
+  }
+
+  .detail {
+
+  }
+
+  .detail {
+    width: 100%;
+    height: 300px;
+    position: relative;
+    .inner {
+       background-color: white;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+    }
+  }
+
+  .footer {
+        z-index: 200;
+        position: absolute;
+        width: 100%;
+    }
+  }
+
+
+
+
