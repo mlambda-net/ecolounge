@@ -8,14 +8,17 @@
     "start": "./script/serve"
   },
   "dependencies": {
-    "bulma": "^0.9.4",
-    "bulma-carousel": "^4.0.24",
+    "@splidejs/splide": "^4.1.4",
+    "animejs": "^3.2.1",
     "scrollmagic": "^2.0.8",
     "scrollmagic-plugins": "^1.0.8"
   },
   "devDependencies": {
+    "@types/animejs": "^3.1.7",
     "@types/requirejs": "^2.1.34",
     "@types/scrollmagic": "^2.0.3",
+    "bulma": "^0.9.4",
+    "bulma-carousel": "^4.0.24",
     "css-loader": "^6.8.1",
     "sass": "^1.63.6",
     "sass-loader": "^13.3.2",

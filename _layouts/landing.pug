@@ -4,6 +4,7 @@ bodyClass: page-landing
 
 extends default.pug
 include mixins/carousel.pug
+include mixins/room.pug
 
 block scripts
     script(type="module").
@@ -19,7 +20,7 @@ block content
     include header.pug
 
     div(class="trigger")
-    div(class="landing")
+    div(class="landing pb-6 mb-6")
         | {% for item in site.data.landing.items %}
         div(class="landing-item")
             div(class="hero-landing land" style="background-image:url('{{item.img | relative_url}}')")
@@ -27,15 +28,40 @@ block content
                     div(class="hero-head")
                     div(class="hero-body" )
                         div(class="container has-text-centered inner")
-                            p(class="title") {{item.title}}
-                            p(class="subtitle") {{item.subtitle}}
+                            h1(class="title is-1") {{item.title}}
+                            h4(class="subtitle is-4") {{item.subtitle}}
         | {% endfor %}
+        div(class="landing-item")
+            div(class="hero-landing land")
+                div(class="block space")
+                div(class="container")
+                    div(class="columns is-centered")
+                        div(class="column")
+                            div(class="card")
+                                div(class="card-image")
+                                    +carousel("site.data.landing.carousel", "marley")
+                                div(class="card-content")
+                                    +room("Bob Marley", "1", "no","yes")
 
-    div(class="detail")
-        div(class="inner")
-            div(class="container")
-                +carousel("site.data.landing.carousel")
-                | {{content}}
+                        div(class="column")
+                            div(class="card")
+                                div(class="card-image")
+                                    +carousel("site.data.landing.carousel", "racoon")
+                                div(class="card-content")
+                                    +room("Racoon", "2", "no","yes")
+
+                        div(class="column")
+                            div(class="card")
+                                div(class="card")
+                                    div(class="card-image")
+                                        +carousel("site.data.landing.carousel", "studio")
+                                    div(class="card-content")
+                                        +room("Studio", "1", "yes","yes")
+
+                div(class="block space")
+                div(class="container")
+                    div(class="box")
+                        | {{content}}
 
     include footer.pug
 

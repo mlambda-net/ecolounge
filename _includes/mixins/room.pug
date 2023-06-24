@@ -1,0 +1,10 @@
+
+mixin room(name, rooms, air, kitchen)
+    section(class="section")
+        h1(class="title has-text-centered pb-3") <strong>#{name}</strong>
+        h2(class="subtitle pt-3") Features
+            hr
+            div(class="content is-small pt-3")
+                p(class="is-size-6") <strong>Rooms:</strong> #{rooms}
+                p(class="is-size-6") <strong>Air Conditioner:</strong> #{air}
+                p(class="is-size-6") <strong>Kitchen:</strong> #{kitchen}

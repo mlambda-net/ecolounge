@@ -1,6 +1,11 @@
 
-mixin carousel(data)
-    div(class="carousel")
-        |{% for item in !{ data } %}
-        div {{item.name}}
-        |{% endfor %}
+mixin carousel(data, name)
+    section(class="splide " + name )
+        div(class="splide__track")
+            ul(class="splide__list")
+                |{% for item in !{ data } %}
+                li(class="splide__slide")
+                    figure(class="image")
+                        img(src="{{item.img | relative_url}}")
+                |{% endfor %}
+

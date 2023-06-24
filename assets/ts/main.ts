@@ -9,7 +9,6 @@ export class App {
         return new PageLanding()
     }
 }
-
 window.addEventListener("load",()=> {
     let app = new App();
     const event = new CustomEvent("app.load", {detail: app });

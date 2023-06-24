@@ -1,7 +1,8 @@
+@import "reset.";
 @import "bulma/bulma.sass";
 @import "bulma-carousel/src/sass/index.sass";
 @import "pages/page-landing";
-
+@import '@splidejs/splide/css/default';
 @import url('https://fonts.googleapis.com/css?family=Roboto');
 $family-sans-serif: 'Roboto', sans-serif;
 
