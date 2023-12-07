@@ -1,6 +1,8 @@
 
 name: Build EcoLodge site
 
+runs-on: [self-hosted]
+
 on:
   push:
     branches: ["main"]
