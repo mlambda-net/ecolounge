@@ -1,7 +1,8 @@
 
 name: Build EcoLodge site
 
-runs-on: [self-hosted]
+runs-on:
+    group: default
 
 on:
   push:
