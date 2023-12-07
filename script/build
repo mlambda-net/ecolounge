@@ -3,4 +3,4 @@
 echo "Building"
 
 webpack "$1"
-"${HOME}"/gems/bin/bundle exec "${HOME}"/gems/bin/jekyll build
+bundle exec jekyll build

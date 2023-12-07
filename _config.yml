@@ -18,7 +18,6 @@ sass:
 plugins:
   - jekyll-environment-variables
   - jekyll-mermaid
-  - jekyll-liquify
   - jekyll-pug
 
 

@@ -31,7 +31,7 @@ import * as ScrollMagic from "scrollmagic";
          let controller = new ScrollMagic.Controller({
              globalSceneOptions: {
                  triggerHook: "onCenter",
-                 duration: "80%"
+                 duration: "50%"
              }
          });
 

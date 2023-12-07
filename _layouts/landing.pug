@@ -20,10 +20,10 @@ block content
     include header.pug
 
     div(class="trigger")
-    div(class="landing pb-6 mb-6")
+    div(class="landing pb-6 mb-3")
         | {% for item in site.data.landing.items %}
         div(class="landing-item")
-            div(class="hero-landing land" style="background-image:url('{{item.img | relative_url}}')")
+            div(class="hero-landing land" style="background-image:url('{{item.img | relative_url}}'); background-size: cover; background-repeat:   no-repeat;background-position: center center;   ")
                 section(class="hero is-fullheight")
                     div(class="hero-head")
                     div(class="hero-body" )
